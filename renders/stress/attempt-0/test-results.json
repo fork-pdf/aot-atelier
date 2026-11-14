@@ -1,0 +1,10 @@
+{
+  "reason": "Forcing a fitting page for measurement",
+  "patch": {
+    "pageSizes": [
+      1,
+      13
+    ],
+    "probePass": 1
+  }
+}

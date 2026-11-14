@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "template": {
+    "name": "atelier-aot",
+    "html": "./invoice.njk",
+    "css": "./styles.css",
+    "testcase": "./testcase.js",
+    "pageSelector": ".page",
+    "fonts": "./fonts"
+  },
+  "input": {
+    "plates": "./plates"
+  },
+  "output": {
+    "dir": "./aot-output",
+    "bundle": "./template.fpaot",
+    "formats": ["pdf", "svg", "png", "json"]
+  },
+  "plates": {
+    "build": true,
+    "concurrency": 4,
+    "previewPng": false
+  },
+  "coverage": {
+    "mode": "ingest-only",
+    "allowPartialBundle": false
+  },
+  "compliance": {
+    "required": "none"
+  },
+  "verification": {
+    "requireTestcase": true,
+    "testcaseMode": "isolated"
+  },
+  "text": {
+    "strictFit": true,
+    "allowOverflow": false,
+    "mode": "selectable",
+    "verifyLineBreaks": true,
+    "strictLineBreaks": true
+  },
+  "fonts": {
+    "alphabet": "latin1+symbols",
+    "ligatures": false,
+    "families": {}
+  },
+  "validation": {
+    "maxVectorDiff": 0.1,
+    "maxPdfRasterDiff": 2,
+    "strict": false,
+    "validatePayloads": true,
+    "requirePayloadParity": true
+  },
+  "corpus": {
+    "render": "./render-corpus.mjs",
+    "payloads": "./payloads",
+    "output": "./renders",
+    "maxAttempts": 3
+  }
+}

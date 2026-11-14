@@ -1,0 +1,160 @@
+{
+  "brand": {
+    "name": "Studio North",
+    "tagline": "Brand, web & product",
+    "email": "hello@studionorth.co",
+    "website": "studionorth.co",
+    "vat": "VAT GB 123 4567 89"
+  },
+  "client": {
+    "name": "Marlow & Co.",
+    "address": [
+      "48 Rivington Street",
+      "London EC2A 3QP"
+    ],
+    "email": "accounts@marlow.co"
+  },
+  "invoice": {
+    "number": "INV-2026-014",
+    "issued": "09 Nov 2026",
+    "due": "09 Dec 2026"
+  },
+  "project": {
+    "title": "Spring campaign",
+    "description": "Brand identity, website, launch assets, campaign toolkit, motion system and retail guidelines for the spring collection across UK and EU markets.",
+    "dates": "02 Apr – 09 May 2026"
+  },
+  "payment": {
+    "method": "Bank transfer",
+    "accountName": "Studio North",
+    "sortCode": "04-00-04",
+    "accountNumber": "12345678",
+    "iban": "GB29 NWBK 6016 1331 9268 19",
+    "reference": "INV-2026-014"
+  },
+  "notes": "Payment due within 30 days. Please quote the invoice number with your transfer.",
+  "qr": {
+    "src": "assets/pay-qr.png",
+    "alt": "QR code to pay invoice INV-2026-014"
+  },
+  "items": [
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, stakeholder interviews, category audit, positioning territories, messaging architecture, naming territories and a full verbal identity system for launch and rollout. The engagement covers discovery, stakeholder alignment, market review, naming, messaging, art direction, design systems, campaign production and launch support across UK and EU markets.",
+      "qty": 1,
+      "rate": "£2,400.00",
+      "amount": "£2,400.00",
+      "amountValue": 2400
+    },
+    {
+      "description": "Art direction",
+      "detail": "Creative direction, casting, location scouting, wardrobe, set design and on-set oversight for the campaign shoot and motion tests. The shoot covers studio and location setups, talent, wardrobe, props, motion tests and final selects for social, retail and out-of-home.",
+      "qty": 32,
+      "rate": "£120.00",
+      "amount": "£3,840.00",
+      "amountValue": 3840
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour palette, art direction, iconography and a full identity guideline covering print, retail and digital applications. Deliverables include master logo files, responsive lockups, colour tokens, type specimens, iconography and a full brand portal.",
+      "qty": 1,
+      "rate": "£3,600.00",
+      "amount": "£3,600.00",
+      "amountValue": 3600
+    },
+    {
+      "description": "Content strategy",
+      "detail": "Editorial plan, tone of voice, campaign narrative, launch copy and a content calendar for the extended spring campaign across UK and EU markets. The programme includes editorial workshops, messaging testing, channel planning and a launch calendar.",
+      "qty": 1,
+      "rate": "£1,350.00",
+      "amount": "£1,350.00",
+      "amountValue": 1350
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about, journal and contact pages, plus responsive templates for campaign landing pages, a reusable CMS component library and a design QA pass.",
+      "qty": 24,
+      "rate": "£120.00",
+      "amount": "£2,880.00",
+      "amountValue": 2880
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build, CMS setup, analytics, performance budget, accessibility checks, a launch checklist and a handover session for the client team.",
+      "qty": 18,
+      "rate": "£140.00",
+      "amount": "£2,520.00",
+      "amountValue": 2520
+    },
+    {
+      "description": "Launch assets",
+      "detail": "Social templates, out-of-home artwork, retail POS, packaging inserts and print collateral for the launch window.",
+      "qty": 1,
+      "rate": "£1,200.00",
+      "amount": "£1,200.00",
+      "amountValue": 1200
+    },
+    {
+      "description": "Photography",
+      "detail": "Two-day studio shoot, product still life, on-model imagery, art direction and final retouching.",
+      "qty": 1,
+      "rate": "£950.00",
+      "amount": "£950.00",
+      "amountValue": 950
+    },
+    {
+      "description": "Motion system",
+      "detail": "Logo animation, title cards, social cutdowns, transition library and motion guidelines for the campaign toolkit.",
+      "qty": 1,
+      "rate": "£1,800.00",
+      "amount": "£1,800.00",
+      "amountValue": 1800
+    },
+    {
+      "description": "Copywriting",
+      "detail": "Campaign headlines, product descriptions, email sequence, retail copy and a tone-of-voice guide.",
+      "qty": 1,
+      "rate": "£1,100.00",
+      "amount": "£1,100.00",
+      "amountValue": 1100
+    },
+    {
+      "description": "Campaign toolkit",
+      "detail": "Digital asset pack, brand templates, partner guidelines, a self-serve asset library and usage documentation.",
+      "qty": 1,
+      "rate": "£1,650.00",
+      "amount": "£1,650.00",
+      "amountValue": 1650
+    },
+    {
+      "description": "Social templates",
+      "detail": "Paid social, organic posts, stories, reel covers and launch-week scheduling templates.",
+      "qty": 1,
+      "rate": "£1,250.00",
+      "amount": "£1,250.00",
+      "amountValue": 1250
+    },
+    {
+      "description": "Retouching",
+      "detail": "Colour grading, skin retouching, product cleanup and final delivery masters.",
+      "qty": 1,
+      "rate": "£780.00",
+      "amount": "£780.00",
+      "amountValue": 780
+    },
+    {
+      "description": "Production support",
+      "detail": "On-set production support, asset coordination and final file delivery.",
+      "qty": 1,
+      "rate": "£1,430.00",
+      "amount": "£1,430.00",
+      "amountValue": 1430
+    }
+  ],
+  "totals": {
+    "subtotal": "£26,750.00",
+    "taxLabel": "VAT 20%",
+    "tax": "£5,350.00",
+    "total": "£32,100.00"
+  }
+}

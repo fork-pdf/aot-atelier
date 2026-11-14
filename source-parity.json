@@ -1,0 +1,12 @@
+{
+  "upstream": {
+    "repository": "https://gitlab.com/fork-pdf/examples",
+    "path": "invoices/freelance/01-atelier",
+    "commit": "80643556638b21162e91c51978e9ea5179208f55"
+  },
+  "files": {
+    "invoice.njk": "692e2df3f22cafa8ae19d7bfc048b774dc04020dd47150df10464ca864153a61",
+    "styles.css": "544f02be02be445ed4417512a46a321eac1210db6623ebd2de5293128cda733e",
+    "testcase.js": "dc30036beae824b226ba8e6767e9ebc4a7ae1cdf09e90195d7f83a906e7a345f"
+  }
+}

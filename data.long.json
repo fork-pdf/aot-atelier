@@ -1,0 +1,328 @@
+{
+  "brand": {
+    "name": "Studio North",
+    "tagline": "Brand, web & product",
+    "email": "hello@studionorth.co",
+    "website": "studionorth.co",
+    "vat": "VAT GB 123 4567 89"
+  },
+  "client": {
+    "name": "Marlow & Co.",
+    "address": [
+      "48 Rivington Street",
+      "London EC2A 3QP"
+    ],
+    "email": "accounts@marlow.co"
+  },
+  "invoice": {
+    "number": "INV-2026-014",
+    "issued": "09 Nov 2026",
+    "due": "09 Dec 2026"
+  },
+  "project": {
+    "title": "Spring campaign",
+    "description": "Brand identity, website and launch assets for the spring collection.",
+    "dates": "02 Apr – 09 May 2026"
+  },
+  "payment": {
+    "method": "Bank transfer",
+    "accountName": "Studio North",
+    "sortCode": "04-00-04",
+    "accountNumber": "12345678",
+    "iban": "GB29 NWBK 6016 1331 9268 19",
+    "reference": "INV-2026-014"
+  },
+  "notes": "Payment due within 30 days. Please quote the invoice number with your transfer.",
+  "qr": {
+    "src": "assets/pay-qr.png",
+    "alt": "QR code to pay invoice INV-2026-014"
+  },
+  "items": [
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, positioning and messaging. Phase 1.",
+      "qty": 1,
+      "rate": "£2,400.00",
+      "amount": "£2,400.00",
+      "amountValue": 2400
+    },
+    {
+      "description": "Art direction",
+      "detail": "Creative direction and shoot oversight. Phase 1.",
+      "qty": 32,
+      "rate": "£120.00",
+      "amount": "£3,840.00",
+      "amountValue": 3840
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour and guidelines. Phase 1.",
+      "qty": 1,
+      "rate": "£3,600.00",
+      "amount": "£3,600.00",
+      "amountValue": 3600
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about and contact pages. Phase 1.",
+      "qty": 24,
+      "rate": "£120.00",
+      "amount": "£2,880.00",
+      "amountValue": 2880
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build and CMS setup. Phase 1.",
+      "qty": 18,
+      "rate": "£140.00",
+      "amount": "£2,520.00",
+      "amountValue": 2520
+    },
+    {
+      "description": "Launch assets",
+      "detail": "Social templates and print collateral. Phase 1.",
+      "qty": 1,
+      "rate": "£1,200.00",
+      "amount": "£1,200.00",
+      "amountValue": 1200
+    },
+    {
+      "description": "Photography",
+      "detail": "Half-day studio shoot and retouching. Phase 1.",
+      "qty": 1,
+      "rate": "£950.00",
+      "amount": "£950.00",
+      "amountValue": 950
+    },
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, positioning and messaging. Phase 2.",
+      "qty": 2,
+      "rate": "£2,400.00",
+      "amount": "£4,800.00",
+      "amountValue": 4800
+    },
+    {
+      "description": "Art direction",
+      "detail": "Creative direction and shoot oversight. Phase 2.",
+      "qty": 33,
+      "rate": "£120.00",
+      "amount": "£3,960.00",
+      "amountValue": 3960
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour and guidelines. Phase 2.",
+      "qty": 2,
+      "rate": "£3,600.00",
+      "amount": "£7,200.00",
+      "amountValue": 7200
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about and contact pages. Phase 2.",
+      "qty": 25,
+      "rate": "£120.00",
+      "amount": "£3,000.00",
+      "amountValue": 3000
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build and CMS setup. Phase 2.",
+      "qty": 19,
+      "rate": "£140.00",
+      "amount": "£2,660.00",
+      "amountValue": 2660
+    },
+    {
+      "description": "Launch assets",
+      "detail": "Social templates and print collateral. Phase 2.",
+      "qty": 2,
+      "rate": "£1,200.00",
+      "amount": "£2,400.00",
+      "amountValue": 2400
+    },
+    {
+      "description": "Photography",
+      "detail": "Half-day studio shoot and retouching. Phase 2.",
+      "qty": 2,
+      "rate": "£950.00",
+      "amount": "£1,900.00",
+      "amountValue": 1900
+    },
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, positioning and messaging. Phase 3.",
+      "qty": 3,
+      "rate": "£2,400.00",
+      "amount": "£7,200.00",
+      "amountValue": 7200
+    },
+    {
+      "description": "Art direction",
+      "detail": "Creative direction and shoot oversight. Phase 3.",
+      "qty": 34,
+      "rate": "£120.00",
+      "amount": "£4,080.00",
+      "amountValue": 4080
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour and guidelines. Phase 3.",
+      "qty": 3,
+      "rate": "£3,600.00",
+      "amount": "£10,800.00",
+      "amountValue": 10800
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about and contact pages. Phase 3.",
+      "qty": 26,
+      "rate": "£120.00",
+      "amount": "£3,120.00",
+      "amountValue": 3120
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build and CMS setup. Phase 3.",
+      "qty": 20,
+      "rate": "£140.00",
+      "amount": "£2,800.00",
+      "amountValue": 2800
+    },
+    {
+      "description": "Launch assets",
+      "detail": "Social templates and print collateral. Phase 3.",
+      "qty": 3,
+      "rate": "£1,200.00",
+      "amount": "£3,600.00",
+      "amountValue": 3600
+    },
+    {
+      "description": "Photography",
+      "detail": "Half-day studio shoot and retouching. Phase 3.",
+      "qty": 3,
+      "rate": "£950.00",
+      "amount": "£2,850.00",
+      "amountValue": 2850
+    },
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, positioning and messaging. Phase 4.",
+      "qty": 4,
+      "rate": "£2,400.00",
+      "amount": "£9,600.00",
+      "amountValue": 9600
+    },
+    {
+      "description": "Art direction",
+      "detail": "Creative direction and shoot oversight. Phase 4.",
+      "qty": 35,
+      "rate": "£120.00",
+      "amount": "£4,200.00",
+      "amountValue": 4200
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour and guidelines. Phase 4.",
+      "qty": 4,
+      "rate": "£3,600.00",
+      "amount": "£14,400.00",
+      "amountValue": 14400
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about and contact pages. Phase 4.",
+      "qty": 27,
+      "rate": "£120.00",
+      "amount": "£3,240.00",
+      "amountValue": 3240
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build and CMS setup. Phase 4.",
+      "qty": 21,
+      "rate": "£140.00",
+      "amount": "£2,940.00",
+      "amountValue": 2940
+    },
+    {
+      "description": "Launch assets",
+      "detail": "Social templates and print collateral. Phase 4.",
+      "qty": 4,
+      "rate": "£1,200.00",
+      "amount": "£4,800.00",
+      "amountValue": 4800
+    },
+    {
+      "description": "Photography",
+      "detail": "Half-day studio shoot and retouching. Phase 4.",
+      "qty": 4,
+      "rate": "£950.00",
+      "amount": "£3,800.00",
+      "amountValue": 3800
+    },
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, positioning and messaging. Phase 5.",
+      "qty": 5,
+      "rate": "£2,400.00",
+      "amount": "£12,000.00",
+      "amountValue": 12000
+    },
+    {
+      "description": "Art direction",
+      "detail": "Creative direction and shoot oversight. Phase 5.",
+      "qty": 36,
+      "rate": "£120.00",
+      "amount": "£4,320.00",
+      "amountValue": 4320
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour and guidelines. Phase 5.",
+      "qty": 5,
+      "rate": "£3,600.00",
+      "amount": "£18,000.00",
+      "amountValue": 18000
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about and contact pages. Phase 5.",
+      "qty": 28,
+      "rate": "£120.00",
+      "amount": "£3,360.00",
+      "amountValue": 3360
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build and CMS setup. Phase 5.",
+      "qty": 22,
+      "rate": "£140.00",
+      "amount": "£3,080.00",
+      "amountValue": 3080
+    },
+    {
+      "description": "Launch assets",
+      "detail": "Social templates and print collateral. Phase 5.",
+      "qty": 5,
+      "rate": "£1,200.00",
+      "amount": "£6,000.00",
+      "amountValue": 6000
+    },
+    {
+      "description": "Photography",
+      "detail": "Half-day studio shoot and retouching. Phase 5.",
+      "qty": 5,
+      "rate": "£950.00",
+      "amount": "£4,750.00",
+      "amountValue": 4750
+    }
+  ],
+  "totals": {
+    "subtotal": "£172,250.00",
+    "taxLabel": "VAT 20%",
+    "tax": "£34,450.00",
+    "total": "£206,700.00"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "brand": {
+    "name": "Studio North",
+    "tagline": "Brand, web & product",
+    "email": "hello@studionorth.co",
+    "website": "studionorth.co",
+    "vat": "VAT GB 123 4567 89"
+  },
+  "client": {
+    "name": "Marlow & Co.",
+    "address": [
+      "48 Rivington Street",
+      "London EC2A 3QP"
+    ],
+    "email": "accounts@marlow.co"
+  },
+  "invoice": {
+    "number": "INV-2026-014",
+    "issued": "09 Nov 2026",
+    "due": "09 Dec 2026"
+  },
+  "project": {
+    "title": "Spring campaign",
+    "description": "Brand identity, website and launch assets for the spring collection.",
+    "dates": "02 Apr – 09 May 2026"
+  },
+  "payment": {
+    "method": "Bank transfer",
+    "accountName": "Studio North",
+    "sortCode": "04-00-04",
+    "accountNumber": "12345678",
+    "iban": "GB29 NWBK 6016 1331 9268 19",
+    "reference": "INV-2026-014"
+  },
+  "notes": "Payment due within 30 days. Please quote the invoice number with your transfer.",
+  "qr": {
+    "src": "assets/pay-qr.png",
+    "alt": "QR code to pay invoice INV-2026-014"
+  },
+  "items": [
+    {
+      "description": "Brand strategy",
+      "detail": "Discovery workshops, positioning and messaging.",
+      "qty": 1,
+      "rate": "£2,400.00",
+      "amount": "£2,400.00",
+      "amountValue": 2400
+    },
+    {
+      "description": "Visual identity",
+      "detail": "Logo, type system, colour and guidelines.",
+      "qty": 1,
+      "rate": "£3,600.00",
+      "amount": "£3,600.00",
+      "amountValue": 3600
+    },
+    {
+      "description": "Web design",
+      "detail": "Home, work, about and contact pages.",
+      "qty": 24,
+      "rate": "£120.00",
+      "amount": "£2,880.00",
+      "amountValue": 2880
+    },
+    {
+      "description": "Development",
+      "detail": "Responsive build and CMS setup.",
+      "qty": 18,
+      "rate": "£140.00",
+      "amount": "£2,520.00",
+      "amountValue": 2520
+    },
+    {
+      "description": "Photography",
+      "detail": "Half-day studio shoot and retouching.",
+      "qty": 1,
+      "rate": "£950.00",
+      "amount": "£950.00",
+      "amountValue": 950
+    }
+  ],
+  "totals": {
+    "subtotal": "£12,350.00",
+    "taxLabel": "VAT 20%",
+    "tax": "£2,470.00",
+    "total": "£14,820.00"
+  }
+}

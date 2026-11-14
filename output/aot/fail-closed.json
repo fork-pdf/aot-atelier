@@ -1,0 +1,815 @@
+{
+  "ok": false,
+  "code": "E_MISSING_PLAN",
+  "message": "No observed plan for 51 items",
+  "required": {
+    "items": 51,
+    "minimumPages": 4,
+    "maximumPages": 7,
+    "candidates": [],
+    "contentProfile": {
+      "signature": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fieldSignature": [
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 1,
+          "rate": 1
+        }
+      ],
+      "availableProfiles": [
+        {
+          "description": 1,
+          "detail": 1,
+          "qty": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 5,
+          "qty": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
+          "detail": 5,
+          "rate": 1
+        }
+      ]
+    }
+  },
+  "suggestions": [
+    "Add a render for this item count or layout"
+  ],
+  "renderRequests": [
+    {
+      "id": "observed-items51",
+      "reason": "missing_observed_plan",
+      "required": {
+        "items": 51,
+        "arrays": {
+          "items": 51
+        }
+      },
+      "payloadSummary": {
+        "brand": {
+          "name": "Studio North",
+          "tagline": "Brand, web & product",
+          "email": "hello@studionorth.co",
+          "website": "studionorth.co",
+          "vat": "VAT GB 123 4567 89"
+        },
+        "client": {
+          "name": "Marlow & Co.",
+          "address": [
+            "48 Rivington Street",
+            "London EC2A 3QP"
+          ],
+          "email": "accounts@marlow.co"
+        },
+        "invoice": {
+          "number": "INV-2026-014",
+          "issued": "09 Nov 2026",
+          "due": "09 Dec 2026"
+        },
+        "project": {
+          "title": "Spring campaign",
+          "description": "Brand identity, website and launch assets for the spring collection.",
+          "dates": "02 Apr – 09 May 2026"
+        },
+        "payment": {
+          "method": "Bank transfer",
+          "accountName": "Studio North",
+          "sortCode": "04-00-04",
+          "accountNumber": "12345678",
+          "iban": "GB29 NWBK 6016 1331 9268 19",
+          "reference": "INV-2026-014"
+        },
+        "notes": "Payment due within 30 days. Please quote the invoice number with your transfer.",
+        "qr": {
+          "src": "assets/pay-qr.png",
+          "alt": "QR code to pay invoice INV-2026-014"
+        },
+        "items": [
+          {
+            "description": "Brand strategy 1",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 2",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 3",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 4",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 5",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 6",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 7",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 8",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 9",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 10",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 11",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 12",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 13",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 14",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 15",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 16",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 17",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 18",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 19",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 20",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 21",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 22",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 23",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 24",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 25",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 26",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 27",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 28",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 29",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 30",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 31",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 32",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 33",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 34",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 35",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 36",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 37",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 38",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 39",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 40",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 41",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 42",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 43",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "description": "Art direction 44",
+            "detail": "Creative direction and shoot oversight.",
+            "qty": 32,
+            "rate": "£120.00",
+            "amount": "£3,840.00",
+            "amountValue": 3840
+          },
+          {
+            "description": "Visual identity 45",
+            "detail": "Logo, type system, colour and guidelines.",
+            "qty": 1,
+            "rate": "£3,600.00",
+            "amount": "£3,600.00",
+            "amountValue": 3600
+          },
+          {
+            "description": "Web design 46",
+            "detail": "Home, work, about and contact pages.",
+            "qty": 24,
+            "rate": "£120.00",
+            "amount": "£2,880.00",
+            "amountValue": 2880
+          },
+          {
+            "description": "Development 47",
+            "detail": "Responsive build and CMS setup.",
+            "qty": 18,
+            "rate": "£140.00",
+            "amount": "£2,520.00",
+            "amountValue": 2520
+          },
+          {
+            "description": "Launch assets 48",
+            "detail": "Social templates and print collateral.",
+            "qty": 1,
+            "rate": "£1,200.00",
+            "amount": "£1,200.00",
+            "amountValue": 1200
+          },
+          {
+            "description": "Photography 49",
+            "detail": "Half-day studio shoot and retouching.",
+            "qty": 1,
+            "rate": "£950.00",
+            "amount": "£950.00",
+            "amountValue": 950
+          },
+          {
+            "description": "Brand strategy 50",
+            "detail": "Discovery workshops, positioning and messaging.",
+            "qty": 1,
+            "rate": "£2,400.00",
+            "amount": "£2,400.00",
+            "amountValue": 2400
+          },
+          {
+            "omitted": true,
+            "reason": "array-truncated",
+            "count": 1
+          }
+        ],
+        "totals": {
+          "subtotal": "£17,390.00",
+          "taxLabel": "VAT 20%",
+          "tax": "£3,478.00",
+          "total": "£20,868.00"
+        },
+        "qrDataUri": {
+          "omitted": true,
+          "reason": "large-key",
+          "length": 4778
+        }
+      }
+    }
+  ]
+}

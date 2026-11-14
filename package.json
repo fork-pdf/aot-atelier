@@ -1,0 +1,28 @@
+{
+  "name": "forkpdf-aot-atelier",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline AOT showcase for the ForkPDF Atelier invoice.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "payloads": "node scripts/build-payloads.mjs",
+    "render": "node render-api.mjs",
+    "render:corpus": "fpaot render",
+    "compile": "fpaot compile --profile",
+    "aot": "node aot-demo.mjs",
+    "verify": "node verify.mjs",
+    "check": "node --check verify.mjs && node --check aot-demo.mjs && npm run verify"
+  },
+  "dependencies": {
+    "forkpdf": "^1.7.0",
+    "forkpdf-aot": "0.1.0-preview.0",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "forkpdf-aot-compiler": "0.1.0-preview.0"
+  }
+}

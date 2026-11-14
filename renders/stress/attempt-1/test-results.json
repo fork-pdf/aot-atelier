@@ -1,0 +1,11 @@
+{
+  "reason": "Applied final page plan after probe",
+  "patch": {
+    "pageSizes": [
+      8,
+      6
+    ],
+    "measurePass": 1,
+    "probePass": 0
+  }
+}

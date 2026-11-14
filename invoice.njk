@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atelier — a warm editorial freelance invoice template rendered by the ForkPDF API.">
+  <title>Studio North — Invoice {{ invoice.number }}</title>
+</head>
+<body>
+
+{% macro brandHeader(brand, invoice) %}
+<header class="invoice-header" data-testid="header">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <div>
+      <p class="brand-name">{{ brand.name }}</p>
+      <p class="brand-tagline">{{ brand.tagline }}</p>
+    </div>
+  </div>
+  <div class="invoice-meta">
+    <h1 class="invoice-title">Invoice</h1>
+    <dl class="meta-list">
+      <div>
+        <dt>Number</dt>
+        <dd data-testid="invoice-number">{{ invoice.number }}</dd>
+      </div>
+      <div>
+        <dt>Issued</dt>
+        <dd>{{ invoice.issued }}</dd>
+      </div>
+      <div>
+        <dt>Due</dt>
+        <dd>{{ invoice.due }}</dd>
+      </div>
+    </dl>
+  </div>
+</header>
+{% endmacro %}
+
+{% macro parties(client, project) %}
+<section class="parties" data-testid="parties" aria-label="Billing details">
+  <div class="party">
+    <p class="eyebrow">Billed to</p>
+    <p class="client-name" data-testid="client-name">{{ client.name }}</p>
+    <address>
+      {% for line in client.address %}{{ line }}<br>{% endfor %}
+      {{ client.email }}
+    </address>
+  </div>
+  <div class="project">
+    <p class="eyebrow">Project</p>
+    <p class="project-title">{{ project.title }}</p>
+    <p class="project-desc">{{ project.description }}</p>
+    <p class="project-dates">{{ project.dates }}</p>
+  </div>
+</section>
+{% endmacro %}
+
+{% macro continuationHeader(brand, invoice) %}
+<header class="continuation-header">
+  <div class="continuation-brand">
+    <span class="continuation-mark" aria-hidden="true"></span>
+    <div class="continuation-brand-text">
+      <span class="continuation-name">{{ brand.name }}</span>
+      <span class="continuation-tagline">{{ brand.tagline }}</span>
+    </div>
+  </div>
+  <div class="continuation-meta">Invoice {{ invoice.number }} · Continued</div>
+</header>
+{% endmacro %}
+
+{% macro itemTable(rows, broughtForward, carriedForward) %}
+<table class="items-table">
+  <colgroup>
+    <col style="width: 52%">
+    <col style="width: 10%">
+    <col style="width: 16%">
+    <col style="width: 22%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Description</th>
+      <th scope="col" class="qty">Qty</th>
+      <th scope="col" class="num">Rate</th>
+      <th scope="col" class="num">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if broughtForward %}
+    <tr class="carry-row carry-row--brought" data-role="brought-forward">
+      <td colspan="3">Brought forward</td>
+      <td class="num">{{ broughtForward }}</td>
+    </tr>
+    {% endif %}
+    {% for item in rows %}
+    <tr class="item-row">
+      <td>
+        <span class="item-name">{{ item.description }}</span>
+        <span class="item-detail">{{ item.detail }}</span>
+      </td>
+      <td class="qty">{{ item.qty }}</td>
+      <td class="num">{{ item.rate }}</td>
+      <td class="num">{{ item.amount }}</td>
+    </tr>
+    {% endfor %}
+    {% if carriedForward %}
+    <tr class="carry-row" data-role="carried-forward">
+      <td colspan="3">Carried forward</td>
+      <td class="num">{{ carriedForward }}</td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>
+{% endmacro %}
+
+{% macro totalsBlock(totals) %}
+<section class="totals" data-testid="totals" aria-label="Invoice totals">
+  <div class="totals-inner">
+    <div class="total-row">
+      <span class="label">Subtotal</span>
+      <span class="value">{{ totals.subtotal }}</span>
+    </div>
+    <div class="total-row">
+      <span class="label">{{ totals.taxLabel }}</span>
+      <span class="value">{{ totals.tax }}</span>
+    </div>
+    <div class="total-row total-due" data-testid="total-due">
+      <span class="label">Total due</span>
+      <span class="value">{{ totals.total }}</span>
+    </div>
+  </div>
+</section>
+{% endmacro %}
+
+{% macro paymentBlock(payment, notes, client, qrDataUri) %}
+<section class="payment" data-testid="payment" aria-label="Payment details and notes">
+  <div class="payment-details">
+    <p class="eyebrow">Payment</p>
+    <p><strong>{{ payment.method }}</strong></p>
+    <p>
+      {{ payment.accountName }}<br>
+      Sort {{ payment.sortCode }} · Account {{ payment.accountNumber }}<br>
+      IBAN {{ payment.iban }}
+    </p>
+    <p class="reference">Reference <strong>{{ payment.reference }}</strong></p>
+  </div>
+  <div class="notes">
+    <p class="eyebrow">Notes</p>
+    <p>{{ notes }}</p>
+    <p>All amounts in GBP. Work delivered and approved by {{ client.name }}</p>
+    <p class="thanks">Thank you.</p>
+  </div>
+  <div class="qr" data-testid="payment-qr">
+    <img src="{{ qrDataUri }}" width="560" height="560" alt="QR code to pay invoice {{ payment.reference }}">
+    <p>Scan to pay</p>
+  </div>
+</section>
+{% endmacro %}
+
+{% macro footerBlock(brand, pageNumber, totalPages) %}
+<footer class="footer" data-testid="footer-{{ pageNumber }}">
+  <span>{{ brand.email }} · {{ brand.website }}</span>
+  <span>{{ brand.vat }} · Page {{ pageNumber }} of {{ totalPages }}</span>
+</footer>
+{% endmacro %}
+
+{% set pageSizes = pageSizes | default([]) %}
+{% if pageSizes.length == 0 %}
+  {% if items.length <= 12 %}
+    {% set pageSizes = [items.length] %}
+  {% else %}
+    {% set pageSizes = [12] %}
+    {% set remaining = items.length - 12 %}
+    {% for i in range(0, items.length) %}
+      {% if remaining > 8 %}
+        {% set pageSizes = pageSizes.concat([15]) %}
+        {% set remaining = remaining - 15 %}
+      {% endif %}
+    {% endfor %}
+    {% if remaining > 0 %}
+      {% set pageSizes = pageSizes.concat([remaining]) %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% set totalPages = 0 %}
+{% set start = 0 %}
+{% for size in pageSizes %}
+  {% if start < items.length %}
+    {% set totalPages = totalPages + 1 %}
+  {% endif %}
+  {% set start = start + size %}
+{% endfor %}
+{% set pageBudget = pageBudget | default(0) %}
+
+{% set start = 0 %}
+{% set running = 0 %}
+{% set pageNumber = 0 %}
+
+{% for size in pageSizes %}
+  {% set rows = items.slice(start, start + size) %}
+  {% if rows.length > 0 %}
+    {% set pageNumber = pageNumber + 1 %}
+
+    {% set pageSubtotal = 0 %}
+    {% for row in rows %}
+      {% set pageSubtotal = pageSubtotal + row.amountValue %}
+    {% endfor %}
+
+    {% set broughtForward = null %}
+    {% if pageNumber > 1 %}
+      {% set broughtForward = running.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' }) %}
+    {% endif %}
+
+    {% set carriedForward = null %}
+    {% if pageNumber < totalPages %}
+      {% set carriedForward = (running + pageSubtotal).toLocaleString('en-GB', { style: 'currency', currency: 'GBP' }) %}
+    {% endif %}
+
+    {% set pageClass = 'page--first' if pageNumber == 1 else ('page--last' if pageNumber == totalPages else 'page--middle') %}
+
+<main
+  class="page {{ pageClass }}"
+  data-layout="{{ 'balanced' if totalPages == 1 else 'multi-page' }}"
+  data-page-budget="{{ pageBudget }}"
+  data-page-sizes="{{ pageSizes | join(',') }}"
+  data-measure-pass="{{ measurePass | default(0) }}"
+  data-probe-pass="{{ probePass | default(0) }}"
+  data-page="{{ pageNumber }}"
+  data-testid="page-{{ pageNumber }}"
+>
+  {% if pageNumber == 1 %}
+  {{ brandHeader(brand, invoice) }}
+  {{ parties(client, project) }}
+  {% else %}
+  {{ continuationHeader(brand, invoice) }}
+  {% endif %}
+  <section class="items" data-testid="items-{{ pageNumber }}" aria-label="Invoice line items">
+    {{ itemTable(rows, broughtForward, carriedForward) }}
+    {% if pageNumber == totalPages and totalPages > 1 %}
+    <section class="invoice-summary" data-testid="invoice-summary">
+      {{ totalsBlock(totals) }}
+      {{ paymentBlock(payment, notes, client, qrDataUri) }}
+    </section>
+    {% endif %}
+  </section>
+  {% if pageNumber == totalPages and totalPages == 1 %}
+  {{ totalsBlock(totals) }}
+  {{ paymentBlock(payment, notes, client, qrDataUri) }}
+  {% endif %}
+  {{ footerBlock(brand, pageNumber, totalPages) }}
+</main>
+
+    {% set running = running + pageSubtotal %}
+  {% endif %}
+  {% set start = start + size %}
+{% endfor %}
+
+</body>
+</html>

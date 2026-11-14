@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "pageBudget": 3,
+  "pageSizes": [
+    12,
+    15,
+    8
+  ],
+  "totalPages": 3,
+  "lineItems": 35,
+  "carriedRows": 2,
+  "broughtRows": 2
+}
