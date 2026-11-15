@@ -44,7 +44,7 @@
       "pdfEqual": true,
       "pbEqual": true,
       "qrSrcMatches": true,
-      "durationMs": 2.83
+      "durationMs": 2.79
     },
     {
       "variant": "balanced",
@@ -59,7 +59,7 @@
       "pdfEqual": true,
       "pbEqual": true,
       "qrSrcMatches": true,
-      "durationMs": 1.04
+      "durationMs": 1
     },
     {
       "variant": "long",
@@ -89,7 +89,7 @@
       "pdfEqual": true,
       "pbEqual": true,
       "qrSrcMatches": true,
-      "durationMs": 1.48
+      "durationMs": 1.41
     }
   ],
   "structural": {
@@ -125,7 +125,7 @@
       "hasCarriedText": true,
       "hasBroughtText": true
     },
-    "durationMs": 524.65
+    "durationMs": 528.04
   },
   "trainingPatchTrace": {
     "version": 1,
@@ -1392,7 +1392,7 @@
     "platform": "linux",
     "arch": "x64",
     "runtimeVersion": "0.1.0-preview.0",
-    "compilerVersion": "0.1.0-preview.0",
+    "compilerVersion": "0.1.0-preview.1",
     "commands": {
       "render": "npm run render:corpus",
       "compile": "npm run compile",

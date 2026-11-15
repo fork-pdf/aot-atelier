@@ -23,6 +23,6 @@
     "nunjucks": "^3.2.4"
   },
   "devDependencies": {
-    "forkpdf-aot-compiler": "0.1.0-preview.0"
+    "forkpdf-aot-compiler": "0.1.0-preview.1"
   }
 }
