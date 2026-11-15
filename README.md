@@ -290,8 +290,7 @@ aot-atelier/
 ├── artifacts.sha256
 ├── lib/
 ├── scripts/
-├── docs/
-└── .gitlab-ci.yml
+└── docs/
 ```
 
 ## Artifacts
