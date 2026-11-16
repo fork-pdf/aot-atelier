@@ -260,13 +260,15 @@ subprocesses.
 
 Exact replay preserves the source PDF bytes, including tags and metadata.
 
-Structural generation is not tagged and is not PDF/UA or PDF/A compliant.
-With a compliance policy, structural generation fails closed:
+Structural generation is not tagged and is not PDF/UA or PDF/A compliant yet.
+A compliance-locked bundle requires every source render to match the selected
+profile and cannot be downgraded at runtime.
 
-```json
-{
-  "code": "E_COMPLIANCE_REQUIRED"
-}
+```text
+exact replay       source bytes
+structural replay  E_COMPLIANCE_STRUCTURE_UNAVAILABLE
+runtime none       E_COMPLIANCE_LOCKED
+older bundle       E_COMPLIANCE_REQUIRED
 ```
 
 See [`docs/compliance.md`](docs/compliance.md).

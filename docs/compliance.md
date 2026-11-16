@@ -11,7 +11,7 @@ exactly. The AOT runtime does not rewrite them.
 
 Structural generation creates a new PDF from plates and glyphs.
 
-It does not preserve:
+It does not yet preserve:
 
 - tagging
 - structure tree
@@ -23,11 +23,17 @@ With a compliance policy, structural generation fails closed:
 
 ```js
 const runtime = loadCompiled('template.fpaot', {
-  compliance: { required: 'preserve' }
+  compliance: { required: 'pdf-ua-1' }
 });
 ```
 
-Result:
+Exact-only locked bundles use:
+
+```text
+E_COMPLIANCE_STRUCTURE_UNAVAILABLE
+```
+
+Older bundles without a lock use:
 
 ```text
 E_COMPLIANCE_REQUIRED
@@ -43,24 +49,66 @@ pdf-ua-2
 pdf-a-4
 ```
 
-`preserve` allows exact replay and rejects structural generation.
+`preserve` allows exact replay only.
 
-Specific profiles additionally require source XMP metadata matching the
-requested profile.
+Specific profiles require source XMP metadata matching the requested profile.
 
-## Training guard
+## Input lock
 
-`fpaot render` blocks compliance-required training before any API call:
+When compliance is not `none`, every final source render must already satisfy
+the selected profile. The compiler rejects a mixed or non-compliant corpus:
 
 ```text
-E_COMPLIANCE_TRAINING_UNSUPPORTED
+E_COMPLIANCE_SOURCE_MISMATCH
+E_COMPLIANCE_MIXED_SOURCES
 ```
 
-This prevents spending credits on corpora whose structural output AOT cannot
-generate compliantly.
+A locked bundle records:
 
-Exact-only `preserve` training requires explicit opt-in:
+```text
+compliance.lock.json
+structure/<source-render>.json
+```
+
+The structure contract is read-only. It records the existing `StructTreeRoot`,
+roles, MCIDs, table headers, figure alt text, language, metadata flags, and XMP.
+It never rewrites the source PDF.
+
+The runtime cannot downgrade a locked bundle:
+
+```text
+E_COMPLIANCE_LOCKED
+```
+
+## Exact-only training
+
+Structural tagging is not implemented yet. A compliance-required compile must
+opt in explicitly:
 
 ```bash
-fpaot render --train-exact-only
+fpaot compile --train-exact-only
 ```
+
+`fpaot render` passes the compliance option to the ForkPDF API. Custom render
+scripts receive:
+
+```text
+FORKPDF_COMPLIANCE
+FORKPDF_TARGET_LANG
+```
+
+Without explicit exact-only opt-in, the compiler rejects structural compliance
+before any API call:
+
+```text
+E_COMPLIANCE_STRUCTURAL_UNSUPPORTED
+```
+
+## Validation boundary
+
+The compiler lock checks `Tagged` plus XMP metadata with `pdfinfo`. Full
+veraPDF/axes4 validation is a separate CI gate and must pass before a public
+structural compliance claim is made.
+
+Some API PDF/UA layouts, including testCase-driven multi-page stress, may need a
+settled payload render before the source itself is compliant.
