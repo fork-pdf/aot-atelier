@@ -49,7 +49,8 @@ pdf-ua-2
 pdf-a-4
 ```
 
-`preserve` allows exact replay only.
+`preserve` allows exact replay only. Source renders must be tagged and carry
+PDF/UA or PDF/A metadata.
 
 Specific profiles require source XMP metadata matching the requested profile.
 
