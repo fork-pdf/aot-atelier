@@ -65,12 +65,12 @@ body {
   padding: var(--page-pad-top) var(--page-pad-x) var(--page-pad-bottom);
   display: grid;
   grid-template-rows:
-    34mm                         /* header */
-    32mm                         /* parties / project */
-    minmax(var(--items-min), 1fr) /* line items */
-    34mm                         /* totals */
-    44mm                         /* payment / notes */
-    10mm;                        /* footer */
+    34mm                           /* header */
+    minmax(32mm, auto)             /* parties / project */
+    minmax(var(--items-min), 1fr)  /* line items */
+    34mm                           /* totals */
+    minmax(44mm, auto)             /* payment / notes */
+    10mm;                          /* footer */
   background: var(--paper);
   color: var(--ink);
   font-size: var(--body-size);
@@ -601,14 +601,14 @@ address {
   width: 210mm;
   min-height: 297mm;
   padding: 18mm 20mm 16mm;
-  grid-template-rows: 34mm 32mm minmax(0, 1fr) 10mm;
+  grid-template-rows: 34mm minmax(32mm, auto) minmax(0, 1fr) 10mm;
   overflow: visible;
   background: var(--paper);
   box-shadow: 0 1.5mm 7mm rgba(30, 28, 25, 0.16);
 }
 
 .page[data-layout='multi-page'].page--first {
-  grid-template-rows: 34mm 32mm minmax(0, 1fr) 10mm;
+  grid-template-rows: 34mm minmax(32mm, auto) minmax(0, 1fr) 10mm;
 }
 
 .page[data-layout='multi-page'].page--middle,
@@ -628,17 +628,17 @@ address {
 
 .page[data-layout='multi-page'].page--last .invoice-summary {
   margin-top: auto;
-  height: 78mm;
+  min-height: 78mm;
   display: grid;
-  grid-template-rows: 34mm 44mm;
+  grid-template-rows: minmax(34mm, auto) minmax(44mm, auto);
 }
 
 .page[data-layout='multi-page'].page--last .invoice-summary .totals {
-  height: 34mm;
+  min-height: 34mm;
 }
 
 .page[data-layout='multi-page'].page--last .invoice-summary .payment {
-  height: 44mm;
+  min-height: 44mm;
 }
 
 /* --------------------------------------------------------------------------

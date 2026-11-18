@@ -12,7 +12,7 @@ import {
   VARIANTS,
   loadCss,
   loadTestcase,
-  renderHtml,
+  loadTemplate,
   variantPayload,
   root
 } from './lib/template.mjs';
@@ -39,7 +39,7 @@ for (const variant of selected) {
   fs.rmSync(tempDir, { recursive: true, force: true });
   try {
     const result = await client.generate({
-      htmlContent: renderHtml(payload),
+      htmlContent: loadTemplate(),
       css: loadCss(),
       data: payload,
       testCase: loadTestcase(),

@@ -42,7 +42,7 @@ The structural showcase changes:
 - project title
 - one item detail
 
-It still produces the measured `[8, 6]` page plan and the carry/brought-forward
+It still produces the measured `[7, 7]` page plan and the carry/brought-forward
 rows.
 
 ## Unknown structural input

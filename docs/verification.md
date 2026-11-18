@@ -12,7 +12,7 @@ It does not call the ForkPDF API.
 | `sourceParity` | compares template/CSS/testcase hashes with pinned upstream |
 | `exactAll` | generates four exact payloads and compares PDF/PB bytes |
 | `structural` | generates the structural payload and checks testcase success |
-| `dynamicPagePlan` | verifies `[8, 6]` and two pages |
+| `dynamicPagePlan` | verifies `[7, 7]` and two pages |
 | `carryForward` | checks carried/brought markers and text in PB |
 | `qr` | checks image `src` equals payload `qrDataUri` |
 | `failClosed` | checks 51-row payload returns `E_MISSING_PLAN` |

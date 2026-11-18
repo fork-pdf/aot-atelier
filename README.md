@@ -35,7 +35,7 @@ Structural generation with dynamic pagination:
 | Exact trained inputs are byte-identical | `verification.json` → `exact[].pdfEqual`, `pbEqual` |
 | Structural generation works after compile | `output/aot/structural-stress.pdf` |
 | Dynamic testcase logic still runs | `verification.json` → `structural.testResults` |
-| Measured page plan survives compilation | `pageSizes: [8, 6]` |
+| Measured page plan survives compilation | `pageSizes: [7, 7]` |
 | Carry and brought-forward values survive | PB contains both rows and totals |
 | QR is generated from the payload | PB image `src` equals `qrDataUri` |
 | Unknown layouts fail closed | `output/aot/fail-closed.json` |
@@ -160,11 +160,11 @@ Training trace for the 14-row stress payload:
 attempt-0  testcase patch: pageSizes [1, 13], probePass 1
            reason: forcing a fitting page for measurement
 
-attempt-1  testcase patch: pageSizes [8, 6], measurePass 1
+attempt-1  testcase patch: pageSizes [7, 7], measurePass 1
            reason: applying final page plan after probe
 
 attempt-2  success
-           pageSizes [8, 6]
+           pageSizes [7, 7]
            totalPages 2
            carriedRows 1
            broughtRows 1
@@ -196,7 +196,7 @@ The structural verification checks:
 ```json
 {
   "success": true,
-  "pageSizes": [8, 6],
+  "pageSizes": [7, 7],
   "totalPages": 2,
   "lineItems": 14,
   "carriedRows": 1,

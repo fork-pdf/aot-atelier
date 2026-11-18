@@ -1,13 +1,18 @@
 {
-  "success": true,
-  "pageBudget": 3,
-  "pageSizes": [
-    12,
-    15,
-    8
-  ],
-  "totalPages": 3,
-  "lineItems": 35,
-  "carriedRows": 2,
-  "broughtRows": 2
+  "reason": "Calculated all page sizes in one measurement",
+  "patch": {
+    "pageSizes": [
+      11,
+      15,
+      9
+    ],
+    "measurePass": 1,
+    "probePass": 0
+  },
+  "__fpaot": {
+    "version": 1,
+    "key": "__fpaot",
+    "attempts": 1,
+    "history": []
+  }
 }

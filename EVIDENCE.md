@@ -69,7 +69,7 @@ detail. It is not an exact trained input.
 structural: true
 exactSource: false
 plan: stress/attempt-2
-pageSizes: [8, 6]
+pageSizes: [7, 7]
 totalPages: 2
 carriedRows: 1
 broughtRows: 1
@@ -97,12 +97,12 @@ attempt-0
   reason: Forcing a fitting page for measurement
 
 attempt-1
-  patch: pageSizes [8, 6], measurePass 1
+  patch: pageSizes [7, 7], measurePass 1
   reason: Applied final page plan after probe
 
 attempt-2
   success: true
-  pageSizes: [8, 6]
+  pageSizes: [7, 7]
   totalPages: 2
   carriedRows: 1
   broughtRows: 1

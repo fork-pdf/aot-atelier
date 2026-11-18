@@ -327,6 +327,11 @@
         },
         {
           "description": 1,
+          "detail": 1,
+          "rate": 1
+        },
+        {
+          "description": 1,
           "detail": 5,
           "qty": 1,
           "rate": 1

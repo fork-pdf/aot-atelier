@@ -5,5 +5,8 @@ plates/
 .fpaot-cache/
 *.build.json
 renders/**/bundle.zip
+renders/**/page.html
+renders/**/tuple.json
+renders/*/patch-trace.json
 *.tmp
 .DS_Store

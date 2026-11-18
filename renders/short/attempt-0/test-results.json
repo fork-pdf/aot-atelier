@@ -7,5 +7,11 @@
   "totalPages": 1,
   "lineItems": 5,
   "carriedRows": 0,
-  "broughtRows": 0
+  "broughtRows": 0,
+  "__fpaot": {
+    "version": 1,
+    "key": "__fpaot",
+    "attempts": 1,
+    "history": []
+  }
 }

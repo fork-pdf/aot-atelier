@@ -162,5 +162,22 @@
     1,
     13
   ],
-  "probePass": 1
+  "probePass": 1,
+  "__fpaot": {
+    "version": 1,
+    "history": [
+      {
+        "iteration": 1,
+        "patchKeys": [
+          "pageSizes",
+          "probePass"
+        ],
+        "result": {
+          "success": false,
+          "code": null,
+          "reason": "Forcing a fitting page for measurement"
+        }
+      }
+    ]
+  }
 }

@@ -24,7 +24,7 @@ heights, and returns a patch:
 ```js
 {
   patch: {
-    pageSizes: [8, 6],
+    pageSizes: [7, 7],
     measurePass: 1,
     probePass: 0
   },
@@ -38,9 +38,9 @@ For the 14-row stress payload:
 
 ```text
 attempt-0  pageSizes [1, 13]  probePass 1
-attempt-1  pageSizes [8, 6]   measurePass 1
+attempt-1  pageSizes [7, 7]   measurePass 1
 attempt-2  success
-           pageSizes [8, 6]
+           pageSizes [7, 7]
            totalPages 2
            carriedRows 1
            broughtRows 1
@@ -81,7 +81,7 @@ detail. The testcase still returns:
 ```json
 {
   "success": true,
-  "pageSizes": [8, 6],
+  "pageSizes": [7, 7],
   "totalPages": 2,
   "carriedRows": 1,
   "broughtRows": 1

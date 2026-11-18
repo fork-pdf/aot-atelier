@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "forkpdf": "^1.7.0",
-    "forkpdf-aot": "0.1.0-preview.0",
+    "forkpdf-aot": "0.2.0-preview.0",
     "nunjucks": "^3.2.4"
   },
   "devDependencies": {
-    "forkpdf-aot-compiler": "0.1.0-preview.1"
+    "forkpdf-aot-compiler": "0.2.0-preview.0"
   }
 }

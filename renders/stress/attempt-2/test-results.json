@@ -2,11 +2,43 @@
   "success": true,
   "pageBudget": 2,
   "pageSizes": [
-    8,
-    6
+    7,
+    7
   ],
   "totalPages": 2,
   "lineItems": 14,
   "carriedRows": 1,
-  "broughtRows": 1
+  "broughtRows": 1,
+  "__fpaot": {
+    "version": 1,
+    "key": "__fpaot",
+    "attempts": 3,
+    "history": [
+      {
+        "iteration": 1,
+        "patchKeys": [
+          "pageSizes",
+          "probePass"
+        ],
+        "result": {
+          "success": false,
+          "code": null,
+          "reason": "Forcing a fitting page for measurement"
+        }
+      },
+      {
+        "iteration": 2,
+        "patchKeys": [
+          "pageSizes",
+          "measurePass",
+          "probePass"
+        ],
+        "result": {
+          "success": false,
+          "code": null,
+          "reason": "Applied final page plan after probe"
+        }
+      }
+    ]
+  }
 }

@@ -6,5 +6,11 @@
       13
     ],
     "probePass": 1
+  },
+  "__fpaot": {
+    "version": 1,
+    "key": "__fpaot",
+    "attempts": 1,
+    "history": []
   }
 }
