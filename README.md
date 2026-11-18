@@ -40,7 +40,7 @@ Structural generation with dynamic pagination:
 | QR is generated from the payload | PB image `src` equals `qrDataUri` |
 | Unknown layouts fail closed | `output/aot/fail-closed.json` |
 | Worker output matches Node | `verification.json` → `worker.exactEqual` |
-| Compliance is not overclaimed | structural returns `E_COMPLIANCE_REQUIRED` |
+| Compliance policy is fail-closed | this `none` bundle returns `E_COMPLIANCE_REQUIRED` |
 
 ## Verify offline
 
@@ -260,15 +260,16 @@ subprocesses.
 
 Exact replay preserves the source PDF bytes, including tags and metadata.
 
-Structural generation is not tagged and is not PDF/UA or PDF/A compliant yet.
-A compliance-locked bundle requires every source render to match the selected
-profile and cannot be downgraded at runtime.
+Structural generation can emit tagged PDF/UA or PDF/A output when the bundle is
+compiled with the matching compliance profile. The profile is locked to the
+bundle and cannot be downgraded at runtime. This showcase compiles with
+`compliance: none`, so structural compliance requests stay fail-closed.
 
 ```text
 exact replay       source bytes
-structural replay  E_COMPLIANCE_STRUCTURE_UNAVAILABLE
+structural replay  tagged PDF from the locked structure contract (compliant bundle)
 runtime none       E_COMPLIANCE_LOCKED
-older bundle       E_COMPLIANCE_REQUIRED
+this showcase      E_COMPLIANCE_REQUIRED
 ```
 
 See [`docs/compliance.md`](docs/compliance.md).

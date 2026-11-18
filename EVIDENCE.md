@@ -142,13 +142,16 @@ worker.exactEqual: true
 
 ## Compliance behavior
 
-With `compliance.required=preserve`, structural generation returned:
+This showcase compiles with `compliance: none`. With
+`compliance.required=preserve`, structural generation returned:
 
 ```text
 E_COMPLIANCE_REQUIRED
 ```
 
-Exact replay still preserves the original source PDF bytes.
+A bundle compiled with a specific profile emits tagged structural output
+instead and cannot be downgraded at runtime. Exact replay still preserves the
+original source PDF bytes.
 
 ```text
 compliance: true
